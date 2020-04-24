@@ -1,0 +1,166 @@
+@import "./themes";
+
+$white-color: null;
+$black-color: null;
+$header-title-color: null;
+$header-subtitle-color: null;
+$text-color-1: null;
+$text-color-2: null;
+$disabled-control-background-color: null;
+$control-border-color: null;
+$control-background-color: null;
+$control-on-focus-border-color: null;
+$control-on-focus-background-color: null;
+$active-panel-background-color: null;
+$active-panel-border-color: null;
+$inactive-panel-background-color: null;
+$inactive-panel-border-color: null;
+$page-background-color: null;
+$link-active-color: null;
+$link-default-color: null;
+$icon-active-color: null;
+$icon-default-color: null;
+$border-color: null;
+$top-menu-open-border-color: null;
+$top-menu-closed-border-color: null;
+$block-background-color-1: null;
+$block-background-color-2: null;
+$slider-inactive-area-color: null;
+$disabled-control-border-color: $transparent;
+
+// PRIMARY COLORS
+@mixin primary-color-1 {
+  background-image: linear-gradient(140deg, #E4DC1B 0%, #4DDB9F 100%);
+}
+
+@mixin primary-color-2 {
+  background-image: linear-gradient(140deg, #F4E715 0%, #FA8256 100%);
+}
+
+// TEXT MIXINS
+@mixin header-title($text-align: center, $text-transform: uppercase) {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: $text-transform;
+  text-align: $text-align;
+}
+
+@mixin header-subtitle($text-align: center, $text-transform: uppercase) {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: $text-transform;
+  text-align: $text-align;
+}
+
+@mixin regular-text-1($text-align: left, $text-transform: capitalize) {
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: $text-transform;
+  text-align: $text-align;
+}
+
+@mixin regular-text-2($text-align: left, $text-transform: capitalize) {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: $text-transform;
+  text-align: $text-align;
+}
+
+// VENDOR PREFIXES
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+ 
+  // Output standard non-prefixed declaration
+  #{$property}: $value;
+}
+
+@mixin flex {
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+
+@mixin themify($themes: $themes) {
+  // Iterate over the themes
+  @each $theme, $colors in $themes {
+    // Create a selector (e.g. `.media.theme-dark, .theme-dark .media`)
+    &.theme-#{$theme},
+    .theme-#{$theme} & {
+      // Set the theme variables with `!global`
+
+      $white-color: map-get($colors, 'white-color') !global;
+      $black-color: map-get($colors, 'black-color') !global;
+      $header-title-color: map-get($colors, 'header-title-color') !global;
+      $header-subtitle-color: map-get($colors, 'header-subtitle-color') !global;
+      $text-color-1: map-get($colors, 'text-color-1') !global;
+      $text-color-2: map-get($colors, 'text-color-2') !global;
+      $disabled-control-background-color: map-get($colors, 'disabled-control-background-color') !global;
+      $control-border-color: map-get($colors, 'control-border-color') !global;
+      $control-background-color: map-get($colors, 'control-background-color') !global;
+      $control-on-focus-border-color: map-get($colors, 'control-on-focus-border-color') !global;
+      $control-on-focus-background-color: map-get($colors, 'control-on-focus-background-color') !global;
+      $active-panel-background-color: map-get($colors, 'active-panel-background-color') !global;
+      $active-panel-border-color: map-get($colors, 'active-panel-border-color') !global;
+      $inactive-panel-background-color: map-get($colors, 'inactive-panel-background-color') !global;
+      $inactive-panel-border-color: map-get($colors, 'inactive-panel-border-color') !global;
+      $page-background-color: map-get($colors, 'page-background-color') !global;
+      $link-active-color: map-get($colors, 'link-active-color') !global;
+      $link-default-color: map-get($colors, 'link-default-color') !global;
+      $icon-active-color: map-get($colors, 'icon-active-color') !global;
+      $icon-default-color: map-get($colors, 'link-default-color') !global;
+      $border-color: map-get($colors, 'border-color') !global;
+      $top-menu-open-border-color: map-get($colors, 'top-menu-open-border-color') !global;
+      $top-menu-closed-border-color: map-get($colors, 'top-menu-closed-border-color') !global;
+      $block-background-color-1: map-get($colors, 'block-background-color-1') !global;
+      $block-background-color-2: map-get($colors, 'block-background-color-2') !global;
+      $slider-inactive-area-color: map-get($colors, 'slider-inactive-area-color') !global;
+      $disabled-control-border-color: map-get($colors, 'disabled-control-border-color') !global;
+  
+
+      // Output user content
+      @content;
+
+      // Unset the theme variables with `!global`
+      $white-color: null !global;
+      $black-color: null !global;
+      $header-title-color: null !global;
+      $header-subtitle-color: null !global;
+      $text-color-1: null !global;
+      $text-color-2: null !global;
+      $disabled-control-background-color: null !global;
+      $control-border-color: null !global;
+      $control-background-color: null !global;
+      $control-on-focus-border-color: null !global;
+      $control-on-focus-background-color: null !global;
+      $active-panel-background-color: null !global;
+      $active-panel-border-color: null !global;
+      $inactive-panel-background-color: null !global;
+      $inactive-panel-border-color: null !global;
+      $page-background-color: null !global;
+      $link-active-color: null !global;
+      $link-default-color: null !global;
+      $icon-active-color: null !global;
+      $icon-default-color: null !global;
+      $border-color: null !global;
+      $top-menu-open-border-color: null !global;
+      $top-menu-closed-border-color: null !global;
+      $block-background-color-1: null !global;
+      $block-background-color-2: null !global;
+      $slider-inactive-area-color: null !global;
+      $disabled-control-border-color: null !global;
+    }
+  }
+}

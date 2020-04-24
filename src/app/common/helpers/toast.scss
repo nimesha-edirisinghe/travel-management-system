@@ -1,0 +1,17 @@
+@import "app/styling/main.scss";
+.Toastify__toast{
+  &.Toastify__toast--default{
+    border-radius: 2rem;
+    border: 1px solid;
+    @include themify{
+      border-color: $control-border-color;
+    }
+  }
+}
+
+.Toastify__close-button {
+  &.Toastify__close-button--default{
+    color: transparent;
+    
+  }
+}

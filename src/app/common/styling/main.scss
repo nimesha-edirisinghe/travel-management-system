@@ -1,0 +1,45 @@
+@import "variables";
+@import "typography";
+@import "themes";
+@import "mixins";
+
+
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html.color-theme-in-transition,
+html.color-theme-in-transition *,
+html.color-theme-in-transition *:before,
+html.color-theme-in-transition *:after {
+  transition: all 750ms !important;
+  transition-delay: 0ms !important;
+}
+
+input:focus {
+  outline: none;
+}
+
+html {
+  font-size: $font-size;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  overflow: hidden;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+input, textarea, button {
+  font-family: 'Nunito', sans-serif;
+}
