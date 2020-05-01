@@ -1,12 +1,9 @@
-import React, { ReactNode } from 'react';
+import React from 'react';
 import Carousel from 'antd/lib/carousel';
 import 'antd/lib/carousel/style/css';
+import './MyCarousel.scss';
 
-type Props = {
-  children: ReactNode;
-};
-
-const MyCarousel = ({ children, ...rest }: Props) => {
+const MyCarousel = ({ children, ...rest }) => {
   return <Carousel {...rest}>{children}</Carousel>;
 };
 

@@ -1,0 +1,30 @@
+.large-button-root {
+  border-radius: 3rem;
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 6px 10px rgba(159, 52, 10, 0.3);
+  cursor: pointer;
+
+  &.type-1 {
+    background-color: #9F340A;
+
+    &:hover {
+      background-color: black;
+      color: #FFC61A;
+    }
+  }
+
+  &.type-2 {
+    background-color: black;
+
+    &:hover {
+      color: #FFC61A;
+    }
+  }
+}

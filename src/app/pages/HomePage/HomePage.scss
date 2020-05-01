@@ -1,12 +1,106 @@
 @import 'app/styling/main.scss';
 
 .home-page {
-  @include flex;
-  width: 100vw;
+  overflow-y: scroll;
   height: 100vh;
-  background-color: lawngreen;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid;
+  width: 100vw;
+
+  .home-navbar {
+    height: 25%;
+    width: 100%;
+    border: 1px solid;
+  }
+
+
+
+  .home-body-content {
+    height: 660%;
+    width: 100%;
+    border: 1px solid;
+
+    .slider-section {
+      height: 10%;
+      width: 100%;
+      border: 1px solid;
+    }
+
+    .booking-section {
+      height: 8%;
+      width: 100%;
+      background-color: #FFC61A;
+
+    }
+
+    .service-section {
+      height: 11%;
+      width: 100%;
+      background-color: white;
+      border: 1px solid;
+    }
+
+    .package-section {
+      height: 13%;
+      width: 100%;
+      background-color: #cccc;
+      border: 1px solid;
+    }
+
+    .benefits-section {
+      height: 12%;
+      width: 100%;
+      background-color: yellowgreen;
+      border: 1px solid;
+    }
+
+    .driver-section {
+      height: 14%;
+      width: 100%;
+      background-color: lightcoral;
+      border: 1px solid;
+    }
+
+    .client-section {
+      height: 13%;
+      width: 100%;
+      background-color: lightseagreen;
+      border: 1px solid;
+    }
+
+    .advertisement-section {
+      height: 5%;
+      width: 100%;
+      background-color: lightslategray;
+      border: 1px solid;
+    }
+
+    .footer-section {
+      height: 14%;
+      width: 100%;
+      background-color: lightslategray;
+      border: 1px solid;
+    }
+  }
+
+  // height: 1000px;
+  // background-color: lightgreen;
+  // .main-div {
+  //   height: 1500px;
+  //   width: 100%;
+  // }
 }
+
+// .boxes {
+//   margin: 20px;
+//   margin-top: 150px;
+//   background-color: sandybrown;
+//   overflow: hidden;
+//   height: 200px;
+//   max-height: 35vh;
+//   box-shadow: 0px 12px 18px -6px rgba(0, 0, 0, 0.3);
+//   border-radius: 10px;
+// }
+
+// .grids {
+//   max-width: 50%;
+//   margin: auto;
+// }
