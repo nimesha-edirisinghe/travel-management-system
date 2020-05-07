@@ -9,6 +9,13 @@ import { MyInputWithIcon, MyDatePicker } from 'app/components';
 import LargeFillButton from 'app/components/MyButtons/LargeFillButton';
 import OutlineButton from 'app/components/MyButtons/OutlineButton';
 import BookingSection from './components/BookingSection';
+import WelcomeSection from './components/WelcomeSection';
+import ServiceSection from './components/ServiceSection';
+import FunFactSection from './components/FunFactSection';
+import CallSection from './components/CallSection';
+import PackagesSection from './components/PackagesSection';
+import BenefitsSection from './components/BenefitsSection';
+import DriverSection from './components/DriverSection';
 
 const HomePage = () => {
   useEffect(() => {
@@ -19,17 +26,35 @@ const HomePage = () => {
       <div className="home-navbar" />
 
       <div className="home-body-content">
-        <div className="slider-section" />
-        <div className="booking-section">
+        <div className="home-slider-section" />
+        <div className="home-booking-section">
           <BookingSection />
         </div>
-        <div className="service-section">service</div>
-        <div className="package-section">package</div>
-        <div className="benefits-section">benefits</div>
-        <div className="driver-section">driver</div>
-        <div className="client-section">client</div>
-        <div className="advertisement-section">advertisement</div>
-        <div className="footer-section">footer</div>
+        <div className="home-welcome-section">
+          <WelcomeSection />
+        </div>
+        <div className="home-service-section">
+          <ServiceSection />
+        </div>
+        <div className="home-fun-facts-section">
+          <FunFactSection />
+        </div>
+        <div className="home-call-section">
+          <CallSection />
+        </div>
+        <div className="home-package-section">
+          <PackagesSection />
+        </div>
+        <div className="home-benefits-section">
+          <BenefitsSection />
+        </div>
+        <div className="home-driver-section">
+          <DriverSection />
+        </div>
+        <div className="home-taxi-rate-section">taxi rates</div>
+        <div className="home-news-and-update-section">news and update</div>
+        <div className="home-advertisement-section">advertisement</div>
+        <div className="home-footer-section">footer</div>
       </div>
     </div>
   );

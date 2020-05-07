@@ -6,75 +6,96 @@
   width: 100vw;
 
   .home-navbar {
-    height: 25%;
+    height: 22%;
     width: 100%;
     border: 1px solid;
   }
 
-
-
   .home-body-content {
-    height: 660%;
+    height: 1000%;
     width: 100%;
     border: 1px solid;
 
-    .slider-section {
-      height: 10%;
+    .home-slider-section {
+      height: 7%;
       width: 100%;
       border: 1px solid;
     }
 
-    .booking-section {
-      height: 8%;
+    .home-booking-section {
+      height: 5%;
       width: 100%;
-      background-color: #FFC61A;
-
+      background-color: #ffc61a;
     }
 
-    .service-section {
-      height: 11%;
+    .home-welcome-section {
+      height: 10%;
+      width: 100%;
+      // background-color:;
+    }
+
+    .home-service-section {
+      height: 7%;
       width: 100%;
       background-color: white;
       border: 1px solid;
     }
 
-    .package-section {
-      height: 13%;
+    .home-fun-facts-section {
+      height: 8%;
       width: 100%;
-      background-color: #cccc;
+      background-color: white;
       border: 1px solid;
     }
 
-    .benefits-section {
-      height: 12%;
+    .home-call-section {
+      height: 4%;
       width: 100%;
-      background-color: yellowgreen;
+      background-color: white;
       border: 1px solid;
     }
 
-    .driver-section {
-      height: 14%;
+    .home-package-section {
+      height: 10%;
+      width: 100%;
+      border: 1px solid;
+    }
+
+    .home-benefits-section {
+      height: 9%;
+      width: 100%;
+      border: 1px solid;
+    }
+
+    .home-driver-section {
+      height: 9%;
+      width: 100%;
+      border: 1px solid;
+    }
+
+    .home-taxi-rate-section {
+      height: 10%;
       width: 100%;
       background-color: lightcoral;
       border: 1px solid;
     }
 
-    .client-section {
-      height: 13%;
+    .home-news-and-update-section {
+      height: 7%;
       width: 100%;
-      background-color: lightseagreen;
+      background-color: lightcoral;
       border: 1px solid;
     }
 
-    .advertisement-section {
+    .home-advertisement-section {
       height: 5%;
       width: 100%;
       background-color: lightslategray;
       border: 1px solid;
     }
 
-    .footer-section {
-      height: 14%;
+    .home-footer-section {
+      height: 9%;
       width: 100%;
       background-color: lightslategray;
       border: 1px solid;

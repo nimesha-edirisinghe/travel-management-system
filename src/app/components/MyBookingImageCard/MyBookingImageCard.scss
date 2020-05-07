@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 4px;
+  transition: all .4s ease;
 
   &.selected {
     background-color: #FFD555;

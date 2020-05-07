@@ -9,7 +9,7 @@
   align-items: center;
   justify-content: center;
   border-color: black;
-  -webkit-transition: background-color 0.5s ease-out;
+  transition: all .4s ease;
 
   &:hover {
     background-color: black;

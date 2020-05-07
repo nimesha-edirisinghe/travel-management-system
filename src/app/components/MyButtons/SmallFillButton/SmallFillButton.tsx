@@ -1,12 +1,20 @@
 import React from 'react';
+import './SmallFillButton.scss';
 
-const SmallFillButton = () => {
+type Props = {
+  label: string;
+  isSelected: boolean;
+};
+const SmallFillButton = ({ label, isSelected }: Props) => {
   return (
-    <div>
-      SmallFillButton
+    <div
+      className={
+        isSelected ? 'small-button-wrapper selected' : 'small-button-wrapper'
+      }
+    >
+      {label}
     </div>
   );
-}
+};
 
 export default SmallFillButton;
-  
