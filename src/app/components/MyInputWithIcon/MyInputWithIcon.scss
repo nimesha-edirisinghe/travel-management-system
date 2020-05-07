@@ -1,0 +1,33 @@
+.input-root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  border-radius: 7px;
+  border-color: #cccc;
+
+  .input-field {
+    height: 100%;
+    width: 88%;
+
+    .input-body {
+      height: 100%;
+      width: 100%;
+      background-color: white;
+      padding-left: 2rem;
+      font-size: 1.6rem;
+      border: none;
+      border-radius: 6px 0 0 6px;
+    }
+  }
+
+  .input-icon {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 12%;
+    background-color: white;
+    border-radius: 0 6px 6px 0;
+  }
+}

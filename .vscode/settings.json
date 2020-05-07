@@ -1,0 +1,28 @@
+{
+  "editor.tabSize": 2,
+  "[scss]": {
+    "editor.formatOnSave": true
+  },
+  "files.associations": {
+    "*.jsx": "javascriptreact"
+  },
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "svg.preview.background": "black"
+}

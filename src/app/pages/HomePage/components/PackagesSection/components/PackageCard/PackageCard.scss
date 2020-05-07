@@ -1,0 +1,113 @@
+.package-card-main-wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 2px solid;
+  border-color: #f3f3f3;
+  transition: all .4s ease;
+
+  &:hover {
+    border-color: #FFC000;
+
+    .package-card-button-wrapper {
+      .button-inner-wrapper {
+        background-color: #FFC000;
+        color: black;
+      }
+    }
+  }
+
+  .package-card-image-wrapper {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .image-container {
+      height: 90%;
+      width: 75%;
+    }
+
+  }
+
+  .package-card-title-wrapper {
+    width: 100%;
+    height: 10%;
+    color: #111111;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .package-card-body-wrapper {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .inner-wrapper {
+      width: 80%;
+      height: 80%;
+      display: flex;
+      flex-direction: column;
+
+      .row-wrapper {
+        width: 100%;
+        height: 33.33%;
+        display: flex;
+        flex-direction: row;
+
+        .row-name {
+          height: 100%;
+          width: 60%;
+          color: #717171;
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+
+        }
+
+        .row-value {
+          height: 100%;
+          width: 40%;
+          color: rgb(113, 113, 113);
+          font-size: 16px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+      }
+    }
+
+  }
+
+  .package-card-button-wrapper {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .button-inner-wrapper {
+      height: 55%;
+      width: 70%;
+      border-radius: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #717171;
+      font-size: 16px;
+      font-weight: 600;
+      background-color: #F3F3F3;
+      cursor: pointer;
+      transition: all .4s ease;
+    }
+  }
+}

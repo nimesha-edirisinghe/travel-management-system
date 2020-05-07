@@ -1,0 +1,119 @@
+.home-package-root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .home-package-main-wrapper {
+    height: 90%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+    .package-main-title {
+      height: 8%;
+      width: 100%;
+      color: #717171;
+      font-weight: 600;
+      font-size: 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .package-sub-title {
+      height: 12%;
+      width: 100%;
+      font-size: 60px;
+      letter-spacing: -.04em;
+      font-weight: 700;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .package-button-wrapper {
+      height: 15%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
+      .button-wrapper {
+        height: 100%;
+        width: 75%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        .button-inner-wrapper {
+          height: 45%;
+          width: 20%;
+        }
+      }
+    }
+
+    .package-card-wrapper {
+      height: 65%;
+      width: 100%;
+
+      .package-animated-wrapper {
+        height: 100%;
+        width: 100%;
+
+        .first-inner-wrapper {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .first-package-card-wrapper {
+            height: 100%;
+            width: 23.5%;
+          }
+        }
+
+        .second-inner-wrapper {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .second-package-card-wrapper {
+            height: 100%;
+            width: 23.5%;
+          }
+        }
+
+        .third-inner-wrapper {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .third-package-card-wrapper {
+            height: 100%;
+            width: 23.5%;
+          }
+        }
+
+        .fourth-inner-wrapper {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+
+          .fourth-package-card-wrapper {
+            height: 100%;
+            width: 23.5%;
+          }
+        }
+      }
+    }
+  }
+}

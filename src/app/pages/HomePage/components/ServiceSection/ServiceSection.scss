@@ -1,0 +1,58 @@
+.home-service-root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F3F3F3;
+
+  .service-inner-container {
+    height: 80%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+
+    .main-header-container {
+      height: 10%;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 2.3rem;
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      color: #FFD555;
+    }
+
+    .sub-header-container {
+      height: 15%;
+      width: 100%;
+      text-transform: uppercase;
+      font-size: 4.5rem;
+      display: flex;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    .service-body {
+      height: 75%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .service-vertical-divider {
+        border-left: 1px dashed;
+        height: 75%;
+        margin-top: 2rem;
+        border-color: rgb(113, 113, 113);
+      }
+
+      .service-card-wrapper {
+        width: 21%;
+        height: 100%;
+      }
+    }
+  }
+}
