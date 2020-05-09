@@ -16,6 +16,8 @@ import CallSection from './components/CallSection';
 import PackagesSection from './components/PackagesSection';
 import BenefitsSection from './components/BenefitsSection';
 import DriverSection from './components/DriverSection';
+import RatesSection from './components/RatesSection';
+import NewsSection from './components/NewsSection';
 
 const HomePage = () => {
   useEffect(() => {
@@ -51,8 +53,12 @@ const HomePage = () => {
         <div className="home-driver-section">
           <DriverSection />
         </div>
-        <div className="home-taxi-rate-section">taxi rates</div>
-        <div className="home-news-and-update-section">news and update</div>
+        <div className="home-taxi-rate-section">
+          <RatesSection />
+        </div>
+        <div className="home-news-and-update-section">
+          <NewsSection />
+        </div>
         <div className="home-advertisement-section">advertisement</div>
         <div className="home-footer-section">footer</div>
       </div>
