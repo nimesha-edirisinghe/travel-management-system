@@ -1,14 +1,12 @@
 .home-driver-section-root {
   height: 100%;
   width: 100%;
-  border: 1px solid;
   display: flex;
   align-items: center;
 
   .driver-section-inner-root {
     height: 85%;
     width: 89%;
-    border: 1px solid;
     margin-left: 19rem;
     display: flex;
     flex-direction: row;
@@ -16,55 +14,65 @@
     .driver-body-content {
       height: 100%;
       width: 45%;
-      border: 1px solid;
       display: flex;
       flex-direction: column;
 
       .body-main-title {
         width: 100%;
         height: 10%;
-        border: 1px solid;
+        font-size: 22px;
+        color: #FFC61A;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: flex;
+        align-items: center;
       }
 
       .body-sub-title {
         width: 100%;
         height: 15%;
-        border: 1px solid;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 35px;
+        display: flex;
+        align-items: center;
       }
 
       .body-description {
         width: 100%;
         height: 25%;
-        border: 1px solid;
+        font-size: 16px;
       }
 
       .body-facts-wrapper {
         width: 100%;
         height: 30%;
-        border: 1px solid;
 
         .fact-inner-wrapper {
           height: 100%;
           width: 80%;
-          border: 1px solid;
 
           .fact-row {
             height: 33.33%;
             width: 100%;
-            border: 1px solid;
             display: flex;
             flex-direction: row;
 
             .fact-icon-wrapper {
               width: 10%;
               height: 100%;
-              border: 1px solid;
+              display: flex;
+              align-items: center;
+              justify-content: center;
             }
 
             .fact-content-wrapper {
               width: 40%;
               height: 100%;
-              border: 1px solid;
+              display: flex;
+              align-items: center;
+              font-size: 16px;
+              font-weight: 600;
             }
           }
         }
@@ -73,12 +81,12 @@
       .body-button-wrapper {
         width: 100%;
         height: 20%;
-        border: 1px solid;
+        display: flex;
+        align-items: flex-end;
 
         .button-inner-wrapper {
-          height: 75%;
-          width: 55%;
-          border: 1px solid;
+          height: 60%;
+          width: 45%;
         }
       }
     }
@@ -86,7 +94,6 @@
     .driver-image-content {
       height: 100%;
       width: 55%;
-      border: 1px solid;
     }
   }
 }

@@ -1,5 +1,8 @@
 import React from 'react';
 import './BenefitsSection.scss';
+import insurance from 'app/assets/images/home-benefit/_insurance.png';
+import seatBelt from 'app/assets/images/home-benefit/_seatbelt.png';
+import pen from 'app/assets/images/home-benefit/_pen.png';
 import BenefitCard from './components/BenefitCard';
 
 const BenefitsSection = () => {
@@ -17,10 +20,29 @@ const BenefitsSection = () => {
               description="Lorem ipsum dolor sit amet
 cons adipisci elit vehicula est
 non lac at quam."
+              iconPath={insurance}
             />
           </div>
-          <div className="benefits-card-inner-wrapper">x</div>
-          <div className="benefits-card-inner-wrapper">x</div>
+          <div className="vertical-divider" />
+          <div className="benefits-card-inner-wrapper">
+            <BenefitCard
+              title="DBS Cleared Drivers"
+              description="Lorem ipsum dolor sit amet
+cons adipisci elit vehicula est
+non lac at quam."
+              iconPath={seatBelt}
+            />
+          </div>
+          <div className="vertical-divider" />
+          <div className="benefits-card-inner-wrapper">
+            <BenefitCard
+              title="Free Quotation"
+              description="Lorem ipsum dolor sit amet
+cons adipisci elit vehicula est
+non lac at quam."
+              iconPath={pen}
+            />
+          </div>
         </div>
       </div>
     </div>

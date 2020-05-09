@@ -1,0 +1,15 @@
+@import "app/styling/main.scss";
+
+.home-news-root {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  @include flex-center;
+
+  .home-inner-root {
+    width: 75%;
+    height: 95%;
+    border: 1px solid;
+
+  }
+}

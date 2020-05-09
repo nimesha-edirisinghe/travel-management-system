@@ -1,0 +1,59 @@
+@import "app/styling/main.scss";
+
+.home-rate-section-root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3F3F3;
+
+  .rate-root-wrapper {
+    height: 90%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .rate-main-title-wrapper {
+      height: 10%;
+      width: 100%;
+      color: #717171;
+      font-weight: 600;
+      font-size: 16px;
+      @include flex-center;
+    }
+
+    .rate-sub-title-wrapper {
+      height: 12%;
+      width: 100%;
+      font-size: 60px;
+      letter-spacing: -.04em;
+      font-weight: 700;
+      @include flex-center;
+    }
+
+    .rate-card-wrapper {
+      height: 63%;
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+
+      .card-inner-wrapper {
+        height: 95%;
+        width: 46%;
+      }
+    }
+
+    .rate-description-wrapper {
+      height: 15%;
+      width: 75%;
+      text-align: center;
+      color: #717171;
+      font-size: 16px;
+      line-height: 34px;
+    }
+  }
+}
