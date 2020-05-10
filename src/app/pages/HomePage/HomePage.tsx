@@ -5,9 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { MyInputWithIcon, MyDatePicker } from 'app/components';
+import { MyInputWithIcon, MyDatePicker, MyCarousel } from 'app/components';
 import LargeFillButton from 'app/components/MyButtons/LargeFillButton';
 import OutlineButton from 'app/components/MyButtons/OutlineButton';
+import sliderImage1 from 'app/assets/images/slider-1-1.jpg';
+import sliderImage2 from 'app/assets/images/slider-1-2.jpg';
 import BookingSection from './components/BookingSection';
 import WelcomeSection from './components/WelcomeSection';
 import ServiceSection from './components/ServiceSection';
@@ -18,6 +20,7 @@ import BenefitsSection from './components/BenefitsSection';
 import DriverSection from './components/DriverSection';
 import RatesSection from './components/RatesSection';
 import NewsSection from './components/NewsSection';
+import AdvertisementSection from './components/AdvertisementSection';
 
 const HomePage = () => {
   useEffect(() => {
@@ -28,7 +31,27 @@ const HomePage = () => {
       <div className="home-navbar" />
 
       <div className="home-body-content">
-        <div className="home-slider-section" />
+        <div className="home-slider-section">
+          <MyCarousel autoplay>
+            <div>
+              <img
+                src={sliderImage1}
+                alt=""
+                height="50%"
+                className="carousal-content-wrapper"
+              />
+              <h3>GET TAXI</h3>
+            </div>
+            <div>
+              <img
+                src={sliderImage2}
+                alt=""
+                height="50%"
+                className="carousal-content-wrapper"
+              />
+            </div>
+          </MyCarousel>
+        </div>
         <div className="home-booking-section">
           <BookingSection />
         </div>
@@ -59,7 +82,9 @@ const HomePage = () => {
         <div className="home-news-and-update-section">
           <NewsSection />
         </div>
-        <div className="home-advertisement-section">advertisement</div>
+        <div className="home-advertisement-section">
+          <AdvertisementSection />
+        </div>
         <div className="home-footer-section">footer</div>
       </div>
     </div>
