@@ -1,0 +1,58 @@
+@import "app/styling/main.scss";
+
+.home-add-root {
+  width: 100%;
+  height: 100%;
+  @include flex-center;
+  background-color: #FFC000;
+
+  .home-add-root-wrapper {
+    height: 95%;
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+
+    .add-left-wrapper {
+      height: 100%;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+
+      .left-main-title {
+        height: 20%;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1em;
+        @include flex-center;
+      }
+
+      .left-desc-wrapper {
+        height: 50%;
+        width: 100%;
+        font-size: 50px;
+        font-weight: 700;
+        letter-spacing: -0.04em;
+        text-align: center;
+        line-height: 6rem;
+      }
+
+      .left-btn-wrapper {
+        height: 30%;
+        width: 100%;
+        @include flex-center;
+
+        .btn-inner-wrapper {
+          height: 60%;
+          width: 50%;
+        }
+      }
+    }
+
+    .add-right-wrapper {
+      height: 100%;
+      width: 50%;
+      @include flex-center;
+    }
+  }
+}
