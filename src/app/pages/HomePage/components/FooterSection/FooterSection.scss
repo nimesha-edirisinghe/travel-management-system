@@ -1,0 +1,132 @@
+@import "app/styling/main.scss";
+
+.home-footer-section-root {
+
+  height: 100%;
+  width: 100%;
+  background-color: #272727;
+  @include flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+
+  .footer-inner-root {
+    height: 85%;
+    width: 75%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+
+    .footer-top-wrapper {
+      width: 100%;
+      height: 20%;
+      border: 1px solid white;
+      display: flex;
+      justify-content: space-between;
+
+      .footer-top-logo {
+        height: 100%;
+        width: 25%;
+        border: 1px solid white;
+      }
+
+      .footer-top-icon-wrapper {
+        height: 100%;
+        width: 40%;
+        border: 1px solid white;
+      }
+
+    }
+
+    .footer-horizontal-divider {
+      border-top: 2px solid green;
+      width: 100%;
+    }
+
+    .footer-bottom-wrapper {
+      width: 100%;
+      height: 80%;
+      border: 1px solid white;
+      @include flex;
+      flex-direction: row;
+
+      .card-title-inner-wrapper {
+        height: 15%;
+        width: 100%;
+        color: #FFFFFF;
+        font-size: 18px;
+        font-weight: 600;
+        @include flex;
+        align-items: center;
+      }
+
+      .card-body-content {
+        height: 85%;
+        width: 100%;
+        font-size: 14px;
+        line-height: 30px;
+        color: #B5B5B5;
+        font-weight: 600;
+        text-align: justify;
+        padding-right: 2rem;
+        border: 1px solid white;
+
+        .link-wrapper {
+          border: 1px solid white;
+          height: 10%;
+          width: 50%;
+          cursor: pointer;
+
+          &:hover {
+            color: #FFC000;
+          }
+        }
+
+        .footer-contact-desc {
+          width: 100%;
+          height: 20%;
+          border: 1px solid white;
+        }
+
+        .news-button {
+          height: 20%;
+          width: 100%;
+          margin-top: 4rem;
+          border: 1px solid wheat;
+        }
+      }
+
+      .card-wrapper-about {
+        width: 25%;
+        height: 100%;
+        border: 1px solid white;
+      }
+
+      .card-wrapper-link {
+        width: 20%;
+        height: 100%;
+        border: 1px solid white;
+
+      }
+
+      .card-wrapper-contact {
+        width: 20%;
+        height: 100%;
+        border: 1px solid white;
+      }
+
+      .card-wrapper-newsletter {
+        width: 35%;
+        height: 100%;
+        border: 1px solid white;
+      }
+    }
+
+  }
+
+  .footer-inner-bottom-root {
+    height: 6%;
+    width: 100%;
+    background-color: black;
+  }
+}

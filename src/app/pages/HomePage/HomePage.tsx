@@ -21,6 +21,7 @@ import DriverSection from './components/DriverSection';
 import RatesSection from './components/RatesSection';
 import NewsSection from './components/NewsSection';
 import AdvertisementSection from './components/AdvertisementSection';
+import FooterSection from './components/FooterSection';
 
 const HomePage = () => {
   useEffect(() => {
@@ -85,7 +86,9 @@ const HomePage = () => {
         <div className="home-advertisement-section">
           <AdvertisementSection />
         </div>
-        <div className="home-footer-section">footer</div>
+        <div className="home-footer-section">
+          <FooterSection />
+        </div>
       </div>
     </div>
   );
