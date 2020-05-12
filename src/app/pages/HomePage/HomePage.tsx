@@ -5,11 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { MyInputWithIcon, MyDatePicker, MyCarousel } from 'app/components';
+import {
+  MyInputWithIcon,
+  MyDatePicker,
+  MyCarousel,
+  MyNavBar,
+} from 'app/components';
 import LargeFillButton from 'app/components/MyButtons/LargeFillButton';
 import OutlineButton from 'app/components/MyButtons/OutlineButton';
 import sliderImage1 from 'app/assets/images/slider-1-1.jpg';
 import sliderImage2 from 'app/assets/images/slider-1-2.jpg';
+import sliderImage3 from 'app/assets/images/slider-3.jpg';
 import BookingSection from './components/BookingSection';
 import WelcomeSection from './components/WelcomeSection';
 import ServiceSection from './components/ServiceSection';
@@ -29,7 +35,9 @@ const HomePage = () => {
   }, []);
   return (
     <div className="home-page">
-      <div className="home-navbar" />
+      <div className="home-navbar">
+        <MyNavBar />
+      </div>
 
       <div className="home-body-content">
         <div className="home-slider-section">
@@ -46,6 +54,14 @@ const HomePage = () => {
             <div>
               <img
                 src={sliderImage2}
+                alt=""
+                height="50%"
+                className="carousal-content-wrapper"
+              />
+            </div>
+            <div>
+              <img
+                src={sliderImage3}
                 alt=""
                 height="50%"
                 className="carousal-content-wrapper"

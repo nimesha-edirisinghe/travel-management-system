@@ -13,40 +13,35 @@
   .footer-inner-root {
     height: 85%;
     width: 75%;
-    border: 1px solid white;
     display: flex;
     flex-direction: column;
 
     .footer-top-wrapper {
       width: 100%;
       height: 20%;
-      border: 1px solid white;
       display: flex;
       justify-content: space-between;
 
       .footer-top-logo {
         height: 100%;
         width: 25%;
-        border: 1px solid white;
       }
 
       .footer-top-icon-wrapper {
         height: 100%;
         width: 40%;
-        border: 1px solid white;
       }
 
     }
 
     .footer-horizontal-divider {
-      border-top: 2px solid green;
+      border-top: 1px solid #626567;
       width: 100%;
     }
 
     .footer-bottom-wrapper {
       width: 100%;
       height: 80%;
-      border: 1px solid white;
       @include flex;
       flex-direction: row;
 
@@ -69,10 +64,8 @@
         font-weight: 600;
         text-align: justify;
         padding-right: 2rem;
-        border: 1px solid white;
 
         .link-wrapper {
-          border: 1px solid white;
           height: 10%;
           width: 50%;
           cursor: pointer;
@@ -85,40 +78,34 @@
         .footer-contact-desc {
           width: 100%;
           height: 20%;
-          border: 1px solid white;
         }
 
         .news-button {
-          height: 20%;
+          height: 18%;
           width: 100%;
           margin-top: 4rem;
-          border: 1px solid wheat;
         }
       }
 
       .card-wrapper-about {
         width: 25%;
         height: 100%;
-        border: 1px solid white;
       }
 
       .card-wrapper-link {
         width: 20%;
         height: 100%;
-        border: 1px solid white;
 
       }
 
       .card-wrapper-contact {
         width: 20%;
         height: 100%;
-        border: 1px solid white;
       }
 
       .card-wrapper-newsletter {
         width: 35%;
         height: 100%;
-        border: 1px solid white;
       }
     }
 
