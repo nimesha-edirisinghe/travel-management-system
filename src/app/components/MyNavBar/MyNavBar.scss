@@ -32,18 +32,59 @@
 
       .navbar-menu-wrapper {
         height: 70%;
-        width: 82%;
+        width: 80%;
         border: 1px solid white;
 
       }
 
       .navbar-call-wrapper {
         height: 100%;
-        width: 18%;
+        width: 20%;
         border: 1px solid white;
         background-color: black;
-        overflow: hidden;
+        // overflow: hidden;
         border-radius: 0 4.75rem 4.75rem 0;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+
+        .call-icon-wrapper {
+          height: 80%;
+          width: 26%;
+          border: 1px solid white;
+          border-radius: 100%;
+          transform: translateX(-3rem);
+          background-color: black;
+        }
+
+        .call-number-wrapper {
+          height: 100%;
+          width: 55%;
+          border: 1px solid white;
+
+          .call-number-inner-wrapper {
+            height: 50%;
+            width: 100%;
+            border: 1px solid wheat;
+            line-height: 1em;
+            color: #FFC000;
+            font-size: 18px;
+            font-weight: 600;
+            display: flex;
+            align-items: flex-end;
+          }
+
+          .call-name-inner-wrapper {
+            height: 50%;
+            width: 100%;
+            border: 1px solid wheat;
+            color: #fff;
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: .2em;
+            font-weight: 700;
+          }
+        }
       }
     }
   }
