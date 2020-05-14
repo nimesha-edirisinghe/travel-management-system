@@ -1,4 +1,4 @@
-@import "app/styling/main.scss";
+@import 'app/styling/main.scss';
 
 .navbar {
   width: 100%;
@@ -11,6 +11,57 @@
     width: 100%;
     height: 40%;
     border: 1px solid white;
+    @include flex-center;
+
+    .navbar-top-root-inner-wrapper {
+      width: 85%;
+      height: 100%;
+      @include flex-center;
+
+      .navbar-top-reg-wrapper {
+        height: 95%;
+        width: 33.33%;
+        border: 1px solid white;
+        @include flex-center;
+        flex-direction: row;
+
+        .logo-wrapper {
+          height: 100%;
+          width: 20%;
+          border: 1px solid white;
+
+        }
+
+        .navbar-social-media-wrapper {
+          width: 100%;
+          height: 100%;
+          border: 1px solid white;
+          @include flex;
+          align-items: center;
+          justify-content: flex-start;
+
+          .social-media-inner-wrapper {
+            width: 8%;
+            height: 75%;
+            border: 1px solid white;
+            @include flex-center;
+          }
+        }
+
+        .logo-name-wrapper {
+          height: 100%;
+          width: 60%;
+          border: 1px solid white;
+          color: white;
+          @include flex-vertical-center;
+          text-transform: uppercase;
+          font-size: 2.5rem;
+          font-weight: 700;
+
+        }
+
+      }
+    }
   }
 
   .navbar-bottom-root {
@@ -19,12 +70,11 @@
     border: 1px solid white;
     @include flex-center;
 
-
     .navbar-bottom-main-root {
       height: 95%;
       width: 85%;
       // border: 1px solid white;
-      background-color: #FFC000;
+      background-color: #ffc000;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
       border-radius: 47.5px;
       @include flex-center;
@@ -34,7 +84,25 @@
         height: 70%;
         width: 80%;
         border: 1px solid white;
+        @include flex;
+        flex-direction: row;
+        padding: 0 6rem 0 4rem;
+        justify-content: space-between;
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
 
+        .navbar-menu-item {
+          height: 100%;
+          width: 15%;
+          font-weight: 700;
+          border: 1px solid white;
+          @include flex-vertical-center;
+
+          &:hover {
+            color: white;
+          }
+        }
       }
 
       .navbar-call-wrapper {
@@ -55,6 +123,7 @@
           border-radius: 100%;
           transform: translateX(-3rem);
           background-color: black;
+          @include flex-center;
         }
 
         .call-number-wrapper {
@@ -67,7 +136,7 @@
             width: 100%;
             border: 1px solid wheat;
             line-height: 1em;
-            color: #FFC000;
+            color: #ffc000;
             font-size: 18px;
             font-weight: 600;
             display: flex;
@@ -81,7 +150,7 @@
             color: #fff;
             font-size: 13px;
             text-transform: uppercase;
-            letter-spacing: .2em;
+            letter-spacing: 0.2em;
             font-weight: 700;
           }
         }
