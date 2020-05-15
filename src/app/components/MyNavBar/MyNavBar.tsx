@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import './MyNavBar.scss';
@@ -27,7 +28,10 @@ const MyNavBar = () => {
         <div className="navbar-bottom-main-root">
           <div className="navbar-menu-wrapper">
             <div className="navbar-menu-item">Home</div>
-            <div className="navbar-menu-item">Gallery</div>
+            <NavLink to="/playground" className="navbar-menu-item">
+              <div>Gallery</div>
+            </NavLink>
+
             <div className="navbar-menu-item">About</div>
             <div className="navbar-menu-item">Contact</div>
             <div className="navbar-menu-item">Blog</div>
