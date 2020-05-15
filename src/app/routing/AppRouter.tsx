@@ -24,7 +24,7 @@ const AppRouter = () => (
 
     <Switch>
       <OpenRoute path="/" component={HomePage} />
-      <Route path="/playground" component={Playground} />
+      <OpenRoute path="/playground" component={Playground} />
     </Switch>
   </ConnectedRouter>
 );
