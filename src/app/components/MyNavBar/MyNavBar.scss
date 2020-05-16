@@ -3,14 +3,12 @@
 .navbar {
   width: 100%;
   height: 100%;
-  border: 1px solid white;
   display: flex;
   flex-direction: column;
 
   .navbar-top-root {
     width: 100%;
     height: 40%;
-    border: 1px solid white;
     @include flex-center;
 
     .navbar-top-root-inner-wrapper {
@@ -21,21 +19,18 @@
       .navbar-top-reg-wrapper {
         height: 95%;
         width: 33.33%;
-        border: 1px solid white;
         @include flex-center;
         flex-direction: row;
 
         .logo-wrapper {
           height: 100%;
           width: 20%;
-          border: 1px solid white;
 
         }
 
         .navbar-social-media-wrapper {
           width: 100%;
           height: 100%;
-          border: 1px solid white;
           @include flex;
           align-items: center;
           justify-content: flex-start;
@@ -43,7 +38,6 @@
           .social-media-inner-wrapper {
             width: 8%;
             height: 75%;
-            border: 1px solid white;
             @include flex-center;
           }
         }
@@ -51,7 +45,6 @@
         .logo-name-wrapper {
           height: 100%;
           width: 60%;
-          border: 1px solid white;
           color: white;
           @include flex-vertical-center;
           text-transform: uppercase;
@@ -67,13 +60,11 @@
   .navbar-bottom-root {
     width: 100%;
     height: 60%;
-    border: 1px solid white;
     @include flex-center;
 
     .navbar-bottom-main-root {
       height: 95%;
       width: 85%;
-      // border: 1px solid white;
       background-color: #ffc000;
       box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
       border-radius: 47.5px;
@@ -83,7 +74,6 @@
       .navbar-menu-wrapper {
         height: 70%;
         width: 80%;
-        border: 1px solid white;
         @include flex;
         flex-direction: row;
         padding: 0 6rem 0 4rem;
@@ -96,11 +86,21 @@
           height: 100%;
           width: 15%;
           font-weight: 700;
-          border: 1px solid white;
           @include flex-vertical-center;
+          text-decoration: none;
 
           &:hover {
             color: white;
+          }
+
+          .item-wrapper {
+            color: black;
+            text-decoration: none;
+
+            &:hover {
+              color: white;
+              text-decoration: none;
+            }
           }
         }
       }
@@ -108,9 +108,7 @@
       .navbar-call-wrapper {
         height: 100%;
         width: 20%;
-        border: 1px solid white;
         background-color: black;
-        // overflow: hidden;
         border-radius: 0 4.75rem 4.75rem 0;
         display: flex;
         align-items: center;
@@ -119,7 +117,6 @@
         .call-icon-wrapper {
           height: 80%;
           width: 26%;
-          border: 1px solid white;
           border-radius: 100%;
           transform: translateX(-3rem);
           background-color: black;
@@ -129,12 +126,10 @@
         .call-number-wrapper {
           height: 100%;
           width: 55%;
-          border: 1px solid white;
 
           .call-number-inner-wrapper {
             height: 50%;
             width: 100%;
-            border: 1px solid wheat;
             line-height: 1em;
             color: #ffc000;
             font-size: 18px;
@@ -146,7 +141,6 @@
           .call-name-inner-wrapper {
             height: 50%;
             width: 100%;
-            border: 1px solid wheat;
             color: #fff;
             font-size: 13px;
             text-transform: uppercase;
