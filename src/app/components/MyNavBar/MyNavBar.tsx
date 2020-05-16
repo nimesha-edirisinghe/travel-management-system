@@ -27,15 +27,26 @@ const MyNavBar = () => {
       <div className="navbar-bottom-root">
         <div className="navbar-bottom-main-root">
           <div className="navbar-menu-wrapper">
-            <div className="navbar-menu-item">Home</div>
-            <NavLink to="/playground" className="navbar-menu-item">
-              <div>Gallery</div>
+            <NavLink to="/" className="navbar-menu-item">
+              <div className="item-wrapper">Home</div>
             </NavLink>
 
-            <div className="navbar-menu-item">About</div>
-            <div className="navbar-menu-item">Contact</div>
-            <div className="navbar-menu-item">Blog</div>
-            <div className="navbar-menu-item">My Account</div>
+            <NavLink to="/gallery" className="navbar-menu-item">
+              <div className="item-wrapper">Gallery</div>
+            </NavLink>
+
+            <NavLink to="/about" className="navbar-menu-item">
+              <div className="item-wrapper">About</div>
+            </NavLink>
+            <NavLink to="/contact" className="navbar-menu-item">
+              <div className="item-wrapper">Contact</div>
+            </NavLink>
+            <NavLink to="/blog" className="navbar-menu-item">
+              <div className="item-wrapper">Blog</div>
+            </NavLink>
+            <NavLink to="/account" className="navbar-menu-item">
+              <div className="item-wrapper">My Account</div>
+            </NavLink>
           </div>
           <div className="navbar-call-wrapper">
             <div className="call-icon-wrapper">

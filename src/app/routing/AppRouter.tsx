@@ -7,7 +7,14 @@ import OpenRoute from './OpenRoute';
 import 'react-toastify/dist/ReactToastify.css';
 
 // Import Pages
-import { HomePage, Playground } from '../pages';
+import {
+  HomePage,
+  Playground,
+  AboutPage,
+  BlogPage,
+  ContactPage,
+  GalleryPage,
+} from '../pages';
 
 export const browserHistory: History = createBrowserHistory();
 
@@ -24,6 +31,10 @@ const AppRouter = () => (
 
     <Switch>
       <OpenRoute path="/" component={HomePage} />
+      <OpenRoute path="/about" component={AboutPage} />
+      <OpenRoute path="/blog" component={BlogPage} />
+      <OpenRoute path="/contact" component={ContactPage} />
+      <OpenRoute path="/gallery" component={GalleryPage} />
       <OpenRoute path="/playground" component={Playground} />
     </Switch>
   </ConnectedRouter>
