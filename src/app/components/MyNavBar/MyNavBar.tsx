@@ -1,8 +1,11 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import taxiLogo from 'app/assets/images/taxi_logo.png';
+import { Facebook, Twitter, Youtube, Linkedin } from 'react-feather';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons';
 import './MyNavBar.scss';
+import LoginButton from '../MyButtons/LoginButton';
 
 const MyNavBar = () => {
   return (
@@ -11,17 +14,36 @@ const MyNavBar = () => {
         <div className="navbar-top-root-inner-wrapper">
           <div className="navbar-top-reg-wrapper">
             <div className="navbar-social-media-wrapper">
-              <div className="social-media-inner-wrapper" />
-              <div className="social-media-inner-wrapper">x</div>
-              <div className="social-media-inner-wrapper">x</div>
-              <div className="social-media-inner-wrapper">x</div>
+              <div className="social-media-inner-wrapper">
+                <Facebook size="18px" color="#ffc000" />
+              </div>
+              <div className="social-media-inner-wrapper">
+                <Twitter size="18px" color="#ffc000" />
+              </div>
+              <div className="social-media-inner-wrapper">
+                <Youtube size="18px" color="#ffc000" />
+              </div>
+              <div className="social-media-inner-wrapper">
+                <Linkedin size="18px" color="#ffc000" />
+              </div>
             </div>
           </div>
           <div className="navbar-top-reg-wrapper">
-            <div className="logo-wrapper">x</div>
+            <div className="logo-wrapper">
+              <img src={taxiLogo} alt="" height="100%" width="90%" />
+            </div>
             <div className="logo-name-wrapper">Samanala Cabs</div>
           </div>
-          <div className="navbar-top-reg-wrapper">x</div>
+          <div className="navbar-top-reg-wrapper">
+            <div className="nav-bar-sign-up">
+              <div className="sign-up-btn-wrapper">
+                <LoginButton label="Log In" />
+              </div>
+              <div className="sign-up-btn-wrapper">
+                <LoginButton label="Sign Up" />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div className="navbar-bottom-root">
