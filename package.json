@@ -28,6 +28,7 @@
     "react-animated-css": "^1.2.1",
     "react-bootstrap": "^1.0.1",
     "react-dom": "^16.13.1",
+    "react-feather": "^2.0.8",
     "react-infinite-scroll-component": "^5.0.4",
     "react-redux": "^7.2.0",
     "react-router-dom": "5.0.1",
