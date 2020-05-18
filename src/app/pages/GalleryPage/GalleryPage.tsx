@@ -8,6 +8,9 @@ const GalleryPage = () => {
       <div className="gallery-navbar">
         <MyNavBar />
       </div>
+      <div className="gallery-body-content">
+        <div className="gallery-header-wrapper" />
+      </div>
     </div>
   );
 };
