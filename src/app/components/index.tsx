@@ -4,6 +4,8 @@ import MyNavBar from './MyNavBar';
 import MyInputWithIcon from './MyInputWithIcon';
 import MyDatePicker from './MyDatePicker';
 import MyInputWithButton from './MyInputWithButton';
+import MyCol from './MyCol';
+import MyRow from './MyRow';
 
 export {
   MyCarousel,
@@ -12,4 +14,6 @@ export {
   MyInputWithIcon,
   MyDatePicker,
   MyInputWithButton,
+  MyCol,
+  MyRow,
 };

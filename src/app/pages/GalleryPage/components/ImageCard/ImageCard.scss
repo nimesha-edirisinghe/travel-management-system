@@ -1,0 +1,31 @@
+@import 'app/styling/main.scss';
+
+.image-card-root {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  background-color: honeydew;
+
+  .image-card-image-wrapper {
+    height: 80%;
+    width: 100%;
+    border: 1px solid;
+  }
+
+  .image-card-main-title {
+    height: 10%;
+    width: 100%;
+    border: 1px solid;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+
+  .image-card-bottom-wrapper {
+    height: 10%;
+    width: 100%;
+    border: 1px solid;
+  }
+}
