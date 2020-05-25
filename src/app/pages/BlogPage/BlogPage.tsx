@@ -8,6 +8,9 @@ const BlogPage = () => {
       <div className="blog-navbar">
         <MyNavBar />
       </div>
+      <div className="blog-content-wrapper">
+        <div className="blog-inner-wrapper">x</div>
+      </div>
     </div>
   );
 };

@@ -10,4 +10,19 @@
     width: 100%;
     background-color: #252525;
   }
+
+  .blog-content-wrapper {
+    height: 500%;
+    width: 100%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .blog-inner-wrapper {
+      width: 75%;
+      height: 70%;
+      border: 1px solid;
+    }
+  }
 }
