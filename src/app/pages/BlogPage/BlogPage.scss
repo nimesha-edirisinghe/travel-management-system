@@ -16,12 +16,37 @@
     width: 100%;
     border: 1px solid;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+
+    .blog-header {
+      width: 100%;
+      height: 5%;
+      border: 1px solid;
+    }
 
     .blog-inner-wrapper {
-      width: 75%;
-      height: 70%;
+      width: 100%;
+      height: 78%;
+      border: 1px solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .blog-inner-content-wrapper {
+        width: 75%;
+        height: 98%;
+        border: 1px solid;
+
+        .card-wrapper {
+          height: 53.5rem;
+          border: 1px solid;
+        }
+      }
+    }
+
+    .blog-footer {
+      width: 100%;
+      height: 17%;
       border: 1px solid;
     }
   }
