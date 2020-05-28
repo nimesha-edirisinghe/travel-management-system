@@ -17,7 +17,7 @@ const BlogPage = () => {
             <MyRow gutter={[20, 20]}>
               <MyCol span={12}>
                 <div className="card-wrapper">
-                  <BlogCard />
+                  <BlogCard imagePath="" />
                 </div>
               </MyCol>
               <MyCol span={12}>
