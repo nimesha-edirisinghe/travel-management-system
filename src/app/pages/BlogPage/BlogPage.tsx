@@ -1,6 +1,7 @@
 import React from 'react';
 import './BlogPage.scss';
 import { MyNavBar, MyRow, MyCol } from 'app/components';
+import blogImage1 from 'app/assets/images/news/blog-1-1.jpg';
 import FooterSection from '../HomePage/components/FooterSection';
 import BlogCard from './components';
 
@@ -17,7 +18,7 @@ const BlogPage = () => {
             <MyRow gutter={[20, 20]}>
               <MyCol span={12}>
                 <div className="card-wrapper">
-                  <BlogCard imagePath="" />
+                  <BlogCard imagePath={blogImage1} />
                 </div>
               </MyCol>
               <MyCol span={12}>
