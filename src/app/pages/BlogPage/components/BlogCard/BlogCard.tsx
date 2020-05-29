@@ -21,9 +21,15 @@ const BlogCard = ({
   return (
     <div className="blog-card-root">
       <div className="blog-card-image-wrapper">
-        <img src={imagePath} alt="" />
+        <img src={imagePath} alt="" height="100%" width="100%" />
       </div>
-      <div className="blog-card-middle-wrapper">x</div>
+      <div className="blog-card-middle-wrapper">
+        <div className="blog-date-wrapper">
+          <div className="blog-date-inner-wrapper">x</div>
+        </div>
+        <div className="blog-uploaded-by-wrapper">x</div>
+        <div className="blog-comment-wrapper">x</div>
+      </div>
       <div className="blog-card-title-wrapper">x</div>
       <div className="blog-card-desc-wrapper">x</div>
     </div>

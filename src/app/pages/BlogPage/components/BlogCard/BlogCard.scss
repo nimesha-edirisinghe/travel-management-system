@@ -18,6 +18,36 @@
     height: 10%;
     width: 100%;
     border: 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+
+    .blog-date-wrapper {
+      height: 100%;
+      width: 25%;
+      border: 1px solid;
+      display: flex;
+      align-items: center;
+
+      .blog-date-inner-wrapper {
+        height: 70%;
+        width: 98%;
+        border-radius: 2rem;
+        color: #ffff;
+        @include flex-center;
+        background-color: #ffc000;
+      }
+    }
+    .blog-uploaded-by-wrapper {
+      height: 100%;
+      width: 25%;
+      border: 1px solid;
+    }
+    .blog-comment-wrapper {
+      height: 100%;
+      width: 25%;
+      border: 1px solid;
+    }
   }
 
   .blog-card-title-wrapper {
