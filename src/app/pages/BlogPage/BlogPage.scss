@@ -27,7 +27,6 @@
     .blog-inner-wrapper {
       width: 100%;
       height: 78%;
-      border: 1px solid;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -35,11 +34,9 @@
       .blog-inner-content-wrapper {
         width: 75%;
         height: 98%;
-        border: 1px solid;
 
         .card-wrapper {
           height: 53.5rem;
-          border: 1px solid;
         }
       }
     }

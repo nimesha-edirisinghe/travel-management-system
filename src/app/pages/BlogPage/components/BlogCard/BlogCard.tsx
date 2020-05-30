@@ -25,13 +25,13 @@ const BlogCard = ({
       </div>
       <div className="blog-card-middle-wrapper">
         <div className="blog-date-wrapper">
-          <div className="blog-date-inner-wrapper">x</div>
+          <div className="blog-date-inner-wrapper">{date}</div>
         </div>
-        <div className="blog-uploaded-by-wrapper">x</div>
-        <div className="blog-comment-wrapper">x</div>
+        <div className="blog-uploaded-by-wrapper">{uploadedBy}</div>
+        <div className="blog-comment-wrapper">{noOfComments} Comments</div>
       </div>
-      <div className="blog-card-title-wrapper">x</div>
-      <div className="blog-card-desc-wrapper">x</div>
+      <div className="blog-card-title-wrapper">{title}</div>
+      <div className="blog-card-desc-wrapper">{description}</div>
     </div>
   );
 };
