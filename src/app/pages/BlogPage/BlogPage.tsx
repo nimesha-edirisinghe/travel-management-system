@@ -18,7 +18,14 @@ const BlogPage = () => {
             <MyRow gutter={[20, 20]}>
               <MyCol span={12}>
                 <div className="card-wrapper">
-                  <BlogCard imagePath={blogImage1} />
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
                 </div>
               </MyCol>
               <MyCol span={12}>
