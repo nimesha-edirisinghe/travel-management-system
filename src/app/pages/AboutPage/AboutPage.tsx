@@ -3,6 +3,7 @@ import './AboutPage.scss';
 import { MyNavBar } from 'app/components';
 import FooterSection from '../HomePage/components/FooterSection';
 import AdvertisementSection from '../HomePage/components/AdvertisementSection';
+import OfferCard from './components/OfferCard';
 
 const AboutPage = () => {
   return (
@@ -15,7 +16,9 @@ const AboutPage = () => {
         <div className="about-info-wrapper">info</div>
         <div className="about-benefits-wrapper">benefits</div>
         <div className="about-history-wrapper">history</div>
-        <div className="about-offer-wrapper">offer</div>
+        <div className="about-offer-wrapper">
+          <OfferCard />
+        </div>
         <div className="about-add-wrapper">
           <AdvertisementSection />
         </div>

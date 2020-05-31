@@ -1,0 +1,44 @@
+@import 'app/styling/main.scss';
+
+.offer-card-root {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .offer-card-inner-root {
+    width: 75%;
+    height: 98%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+
+    .offer-card-main-title {
+      height: 8%;
+      width: 100%;
+      border: 1px solid;
+      @include flex-center;
+      color: #717171;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .offer-card-sub-title {
+      height: 10%;
+      width: 100%;
+      border: 1px solid;
+      @include flex-center;
+      font-size: 50px;
+      letter-spacing: -.04em;
+      font-weight: 700;
+    }
+
+    .offer-card-wrapper {
+      height: 82%;
+      width: 100%;
+      border: 1px solid;
+    }
+  }
+}

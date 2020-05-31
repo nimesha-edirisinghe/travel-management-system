@@ -29,31 +29,112 @@ const BlogPage = () => {
                 </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
               <MyCol span={12}>
-                <div className="card-wrapper">x</div>
+                <div className="card-wrapper">
+                  <BlogCard
+                    date="20 Feb 2020"
+                    imagePath={blogImage1}
+                    uploadedBy="By Admin"
+                    noOfComments="3"
+                    description="There are many variations of passages of lorem ipsum available but the majority have suffered alteration..."
+                    title="We ensure you that your journey is comfortable and safe"
+                  />
+                </div>
               </MyCol>
             </MyRow>
           </div>
