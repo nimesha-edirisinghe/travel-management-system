@@ -1,0 +1,32 @@
+@import 'app/styling/main.scss';
+
+.offer-block-root {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+
+
+  .offer-block-image {
+    height: 45%;
+    width: 100%;
+    border: 1px solid;
+  }
+
+  .offer-block-main-title {
+    height: 15%;
+    width: 100%;
+    border: 1px solid;
+  }
+
+  .offer-block-description {
+    height: 20%;
+    width: 100%;
+    border: 1px solid;
+  }
+
+  .offer-block-btn-wrapper {
+    height: 20%;
+    width: 100%;
+    border: 1px solid;
+  }
+}
