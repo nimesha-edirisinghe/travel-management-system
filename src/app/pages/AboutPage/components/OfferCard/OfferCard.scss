@@ -31,7 +31,7 @@
       border: 1px solid;
       @include flex-center;
       font-size: 50px;
-      letter-spacing: -.04em;
+      letter-spacing: -0.04em;
       font-weight: 700;
     }
 
@@ -39,6 +39,16 @@
       height: 82%;
       width: 100%;
       border: 1px solid;
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .offer-card-inner-wrapper {
+        height: 98%;
+        width: 32%;
+        border: 1px solid;
+      }
     }
   }
 }
