@@ -3,30 +3,50 @@
 .offer-block-root {
   height: 100%;
   width: 100%;
-  border: 1px solid;
-
+  border-radius: 1rem;
+  @include flex-center;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #fff;
 
   .offer-block-image {
     height: 45%;
     width: 100%;
-    border: 1px solid;
   }
 
   .offer-block-main-title {
     height: 15%;
-    width: 100%;
-    border: 1px solid;
+    width: 80%;
+    @include flex-center;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
   }
 
   .offer-block-description {
     height: 20%;
-    width: 100%;
-    border: 1px solid;
+    width: 80%;
+    color: #717171;
+    font-size: 16px;
+    text-align: justify;
   }
 
   .offer-block-btn-wrapper {
     height: 20%;
-    width: 100%;
-    border: 1px solid;
+    width: 30%;
+    letter-spacing: 0.2em;
+    font-weight: bold;
+    font-size: 12px;
+
+    .btn-inner-wrapper {
+      height: 25%;
+      width: 100%;
+      text-transform: uppercase;
+      transition: all 0.4s ease;
+
+      &:hover {
+        color: #ffc000;
+      }
+    }
   }
 }
