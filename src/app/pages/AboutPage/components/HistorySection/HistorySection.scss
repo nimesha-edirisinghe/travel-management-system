@@ -1,0 +1,14 @@
+@import 'app/styling/main.scss';
+
+.history-section-root {
+  height: 100%;
+  width: 100%;
+  border: 1px solid;
+  @include flex-center;
+
+  .history-section-inner-root {
+    width: 75%;
+    height: 90%;
+    border: 1px solid;
+  }
+}
