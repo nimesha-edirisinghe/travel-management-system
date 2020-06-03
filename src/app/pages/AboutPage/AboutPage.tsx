@@ -5,6 +5,7 @@ import FooterSection from '../HomePage/components/FooterSection';
 import AdvertisementSection from '../HomePage/components/AdvertisementSection';
 import OfferCard from './components/OfferCard';
 import BenefitsSection from '../HomePage/components/BenefitsSection';
+import HistorySection from './components/HistorySection';
 
 const AboutPage = () => {
   return (
@@ -18,7 +19,9 @@ const AboutPage = () => {
         <div className="about-benefits-wrapper">
           <BenefitsSection />
         </div>
-        <div className="about-history-wrapper">history</div>
+        <div className="about-history-wrapper">
+          <HistorySection />
+        </div>
         <div className="about-offer-wrapper">
           <OfferCard />
         </div>
