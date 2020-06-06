@@ -1,0 +1,68 @@
+@import 'app/styling/main.scss';
+
+.about-info-root {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .about-info-inner-root {
+    height: 90%;
+    width: 75%;
+    border: 1px solid;
+    display: flex;
+    flex-direction: column;
+
+    .about-info-main-title {
+      height: 8%;
+      width: 100%;
+      border: 1px solid;
+    }
+
+    .about-info-body-wrapper {
+      height: 92%;
+      width: 100%;
+      border: 1px solid;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      .about-info-body-left-wrapper {
+        height: 92%;
+        width: 50%;
+        border: 1px solid;
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+
+        .subtitle-wrapper {
+          height: 20%;
+          width: 100%;
+          border: 1px solid;
+
+        }
+
+        .description-wrapper {
+          height: 60%;
+          width: 100%;
+          border: 1px solid;
+        }
+
+        .button-wrapper {
+          height: 20%;
+          width: 100%;
+          border: 1px solid;
+        }
+      }
+
+      .about-info-body-right-wrapper {
+        height: 85%;
+        width: 48%;
+        border: 1px solid;
+        margin-top: 2rem
+      }
+    }
+  }
+}
