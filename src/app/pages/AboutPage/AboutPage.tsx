@@ -6,6 +6,7 @@ import AdvertisementSection from '../HomePage/components/AdvertisementSection';
 import OfferCard from './components/OfferCard';
 import BenefitsSection from '../HomePage/components/BenefitsSection';
 import HistorySection from './components/HistorySection';
+import AboutInfoSection from './components/AboutInfoSection';
 
 const AboutPage = () => {
   return (
@@ -15,7 +16,9 @@ const AboutPage = () => {
       </div>
       <div className="about-body-content">
         <div className="about-header-wrapper">header</div>
-        <div className="about-info-wrapper">info</div>
+        <div className="about-info-wrapper">
+          <AboutInfoSection />
+        </div>
         <div className="about-benefits-wrapper">
           <BenefitsSection />
         </div>
