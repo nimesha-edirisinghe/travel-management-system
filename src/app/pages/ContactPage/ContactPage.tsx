@@ -2,6 +2,7 @@ import React from 'react';
 import './ContactPage.scss';
 import { MyNavBar } from 'app/components';
 import FooterSection from '../HomePage/components/FooterSection';
+import MessageSection from './components/MessageSection';
 
 const ContactPage = () => {
   return (
@@ -12,7 +13,9 @@ const ContactPage = () => {
       <div className="contact-body-content">
         <div className="contact-header-wrapper">header</div>
         <div className="contact-map-wrapper">map</div>
-        <div className="contact-message-wrapper">message</div>
+        <div className="contact-message-wrapper">
+          <MessageSection />
+        </div>
         <div className="contact-footer-wrapper">
           <FooterSection />
         </div>
