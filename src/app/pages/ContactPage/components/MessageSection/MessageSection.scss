@@ -10,7 +10,7 @@
   justify-content: center;
 
   .message-section-inner-root {
-    width: 75%;
+    width: 50%;
     height: 95%;
     border: 1px solid;
     display: flex;
@@ -20,18 +20,50 @@
       width: 100%;
       height: 10%;
       border: 1px solid;
+      margin-bottom: 1rem;
     }
 
     .message-sub-title {
       width: 100%;
       height: 12%;
       border: 1px solid;
+      margin-bottom: 2rem;
     }
 
     .message-content-wrapper {
       width: 100%;
       height: 88%;
       border: 1px solid;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-direction: column;
+
+      .content-wrapper-1 {
+        width: 100%;
+        height: 15%;
+        border: 1px solid;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .input-box-wrapper {
+          width: 48%;
+          height: 100%;
+          border: 1px solid;
+        }
+      }
+
+      .content-comment-wrapper {
+        width: 100%;
+        height: 40%;
+        border: 1px solid;
+      }
+      .content-button-wrapper {
+        width: 30%;
+        height: 15%;
+        border: 1px solid;
+      }
     }
   }
 }
