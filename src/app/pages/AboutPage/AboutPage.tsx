@@ -1,6 +1,7 @@
 import React from 'react';
 import './AboutPage.scss';
 import { MyNavBar } from 'app/components';
+import innerBg from 'app/assets/images/_inner-bg.jpg';
 import FooterSection from '../HomePage/components/FooterSection';
 import AdvertisementSection from '../HomePage/components/AdvertisementSection';
 import OfferCard from './components/OfferCard';
@@ -15,7 +16,9 @@ const AboutPage = () => {
         <MyNavBar />
       </div>
       <div className="about-body-content">
-        <div className="about-header-wrapper">header</div>
+        <div className="about-header-wrapper">
+          <img src={innerBg} height="100%" width="100%" alt="" />
+        </div>
         <div className="about-info-wrapper">
           <AboutInfoSection />
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import './BlogPage.scss';
 import { MyNavBar, MyRow, MyCol } from 'app/components';
 import blogImage1 from 'app/assets/images/news/blog-1-1.jpg';
+import innerBg from 'app/assets/images/_inner-bg.jpg';
 import FooterSection from '../HomePage/components/FooterSection';
 import BlogCard from './components';
 
@@ -12,7 +13,9 @@ const BlogPage = () => {
         <MyNavBar />
       </div>
       <div className="blog-content-wrapper">
-        <div className="blog-header"> x</div>
+        <div className="blog-header">
+          <img src={innerBg} height="100%" width="100%" alt="" />
+        </div>
         <div className="blog-inner-wrapper">
           <div className="blog-inner-content-wrapper">
             <MyRow gutter={[20, 20]}>
