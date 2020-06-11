@@ -13,7 +13,15 @@ const HistorySection = () => {
               How we reached to this level
             </div>
             <div className="subtitle-wrapper">2009</div>
-            <div className="content-wrapper">x</div>
+            <div className="content-wrapper">
+              <p>
+                There are many variations of passages of lorem ipsum available
+                but the majority have suffered alteration in some form by
+                injected humour or random words which don't look even slightly
+                believable. If you are going to use a passage of lorem ipsum you
+                need to be sure there isn't anything embarrassing.
+              </p>
+            </div>
           </div>
         </div>
       </div>
