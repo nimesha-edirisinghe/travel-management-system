@@ -10,14 +10,12 @@
   .about-info-inner-root {
     height: 90%;
     width: 75%;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
 
     .about-info-main-title {
       height: 8%;
       width: 100%;
-      border: 1px solid;
       color: #717171;
       font-weight: 600;
       font-size: 17px;
@@ -28,7 +26,6 @@
     .about-info-body-wrapper {
       height: 92%;
       width: 100%;
-      border: 1px solid;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -36,7 +33,6 @@
       .about-info-body-left-wrapper {
         height: 92%;
         width: 50%;
-        border: 1px solid;
         margin-top: 2rem;
         display: flex;
         flex-direction: column;
@@ -46,7 +42,6 @@
         .subtitle-wrapper {
           height: 20%;
           width: 100%;
-          border: 1px solid;
           font-size: 45px;
           font-weight: 700;
           line-height: 4rem;
@@ -58,7 +53,6 @@
         .description-wrapper {
           height: 60%;
           width: 100%;
-          border: 1px solid;
           font-size: 16px;
           line-height: 30px;
           color: #717171;
@@ -68,15 +62,15 @@
         .button-wrapper {
           height: 12%;
           width: 50%;
-          border: 1px solid;
         }
       }
 
       .about-info-body-right-wrapper {
         height: 85%;
-        width: 48%;
-        border: 1px solid;
-        margin-top: 2rem
+        width: 45%;
+        margin-top: 2rem;
+        border-radius: 1.3rem;
+        overflow: hidden;
       }
     }
   }

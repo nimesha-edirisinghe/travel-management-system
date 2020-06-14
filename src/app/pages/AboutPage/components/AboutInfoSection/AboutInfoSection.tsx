@@ -1,5 +1,6 @@
 import React from 'react';
 import './AboutInfoSection.scss';
+import aboutImage from 'app/assets/images/about-1-1.jpg';
 import MediumButton from 'app/components/MyButtons/MediumButton';
 
 const AboutInfoSection = () => {
@@ -23,7 +24,9 @@ const AboutInfoSection = () => {
               <MediumButton label="Discover more" />
             </div>
           </div>
-          <div className="about-info-body-right-wrapper">x</div>
+          <div className="about-info-body-right-wrapper">
+            <img src={aboutImage} alt="about" height="100%" width="100%" />
+          </div>
         </div>
       </div>
     </div>

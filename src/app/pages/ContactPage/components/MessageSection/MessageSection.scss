@@ -3,7 +3,6 @@
 .message-section-root {
   width: 100%;
   height: 100%;
-  border: 1px solid;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,14 +11,12 @@
   .message-section-inner-root {
     width: 50%;
     height: 95%;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
 
     .message-main-title {
       width: 100%;
       height: 10%;
-      border: 1px solid;
       margin-bottom: 1rem;
       color: #717171;
       font-weight: 600;
@@ -31,7 +28,6 @@
     .message-sub-title {
       width: 100%;
       height: 12%;
-      border: 1px solid;
       margin-bottom: 2rem;
       font-size: 55px;
       letter-spacing: -.04em;
@@ -43,7 +39,6 @@
     .message-content-wrapper {
       width: 100%;
       height: 88%;
-      border: 1px solid;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -52,7 +47,6 @@
       .content-wrapper-1 {
         width: 100%;
         height: 15%;
-        border: 1px solid;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -60,20 +54,17 @@
         .input-box-wrapper {
           width: 48%;
           height: 100%;
-          border: 1px solid;
         }
       }
 
       .content-comment-wrapper {
         width: 100%;
         height: 40%;
-        border: 1px solid;
       }
 
       .content-button-wrapper {
         width: 30%;
         height: 15%;
-        border: 1px solid;
       }
     }
   }
