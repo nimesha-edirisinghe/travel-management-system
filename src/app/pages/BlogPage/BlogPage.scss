@@ -14,14 +14,12 @@
   .blog-content-wrapper {
     height: 500%;
     width: 100%;
-    border: 1px solid;
     display: flex;
     flex-direction: column;
 
     .blog-header {
       width: 100%;
       height: 5%;
-      border: 1px solid;
     }
 
     .blog-inner-wrapper {
@@ -44,7 +42,6 @@
     .blog-footer {
       width: 100%;
       height: 17%;
-      border: 1px solid;
     }
   }
 }
