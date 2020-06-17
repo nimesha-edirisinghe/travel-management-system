@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useCallback } from 'react';
 import './GalleryPage.scss';
 import { MyNavBar, MyRow, MyCol } from 'app/components';
 import { ParallaxHover } from 'react-parallax-hover';
@@ -7,11 +7,24 @@ import image2 from 'app/assets/images/gallery/_gallery-2.jpg';
 import image3 from 'app/assets/images/gallery/_gallery-3.jpg';
 import image4 from 'app/assets/images/gallery/_gallery-4.jpg';
 import innerBg from 'app/assets/images/_inner-bg.jpg';
+import Carousel, { Modal, ModalGateway } from 'react-images';
 import FooterSection from '../HomePage/components/FooterSection';
 import AdvertisementSection from '../HomePage/components/AdvertisementSection';
 import ImageCard from './components/ImageCard';
 
 const GalleryPage = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [viewerIsOpen, setViewerIsOpen] = useState(false);
+
+  const openLightbox = (index) => {
+    setCurrentImage(index);
+    setViewerIsOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setCurrentImage(0);
+    setViewerIsOpen(false);
+  };
   const imageArray = [
     {
       id: 1,
@@ -105,9 +118,12 @@ const GalleryPage = () => {
         </div>
         <div className="gallery-content-wrapper">
           <MyRow gutter={[20, 20]}>
-            {imageArray.map((image) => (
+            {imageArray.map((image, index) => (
               <MyCol span={12} key={image.id}>
-                <div className="gallery-card-root">
+                <div
+                  className="gallery-card-root"
+                  onClick={() => openLightbox(index)}
+                >
                   <ParallaxHover width="100%" height="100%" rotation={7}>
                     <ImageCard
                       path={image.path}
