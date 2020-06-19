@@ -38,4 +38,6 @@ const MessageSection = () => {
   );
 };
 
+MessageSection.defaultProps = {};
+
 export default MessageSection;

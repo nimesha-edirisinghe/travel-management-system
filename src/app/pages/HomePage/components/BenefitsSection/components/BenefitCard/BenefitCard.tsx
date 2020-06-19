@@ -24,4 +24,9 @@ const BenefitCard = ({ title, description, iconPath }: Props) => {
   );
 };
 
+BenefitCard.defaultProps = {
+  title: '',
+  description: '',
+};
+
 export default BenefitCard;
