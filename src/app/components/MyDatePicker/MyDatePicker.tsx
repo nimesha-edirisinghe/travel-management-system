@@ -2,7 +2,6 @@ import React from 'react';
 import DatePicker from 'antd/lib/date-picker';
 import 'antd/lib/date-picker/style/css';
 import './MyDatePicker.scss';
-import moment from 'moment';
 
 type Props = {
   title?: string;

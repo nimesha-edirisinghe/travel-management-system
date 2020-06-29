@@ -2,7 +2,6 @@ import React from 'react';
 import './DriverSection.scss';
 import tick from 'app/assets/images/_tick.png';
 import sideCar from 'app/assets/images/home-driver/_car-big-side.png';
-import LargeFillButton from 'app/components/MyButtons/LargeFillButton';
 import MediumButton from 'app/components/MyButtons/MediumButton';
 
 const DriverSection = () => {
