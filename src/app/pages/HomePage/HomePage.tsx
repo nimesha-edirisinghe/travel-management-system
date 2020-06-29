@@ -1,18 +1,9 @@
 import React, { useEffect } from 'react';
 import './HomePage.scss';
 import { connect } from 'react-redux';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import {
-  MyInputWithIcon,
-  MyDatePicker,
-  MyCarousel,
-  MyNavBar,
-} from 'app/components';
-import LargeFillButton from 'app/components/MyButtons/LargeFillButton';
-import OutlineButton from 'app/components/MyButtons/OutlineButton';
+import { MyCarousel, MyNavBar } from 'app/components';
 import sliderImage1 from 'app/assets/images/slider-1-1.jpg';
 import sliderImage2 from 'app/assets/images/slider-1-2.jpg';
 import sliderImage3 from 'app/assets/images/slider-3.jpg';

@@ -1,6 +1,6 @@
 import React from 'react';
 import { History, createBrowserHistory } from 'history';
-import { Switch, Route } from 'react-router-dom';
+import { Switch } from 'react-router-dom';
 import { ConnectedRouter } from 'connected-react-router';
 import { ToastContainer, toast, Slide } from 'react-toastify';
 import OpenRoute from './OpenRoute';

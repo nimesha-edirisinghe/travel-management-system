@@ -1,4 +1,4 @@
-import React, { useState, useCallback } from 'react';
+import React, { useState } from 'react';
 import './GalleryPage.scss';
 import { MyNavBar, MyRow, MyCol } from 'app/components';
 import { ParallaxHover } from 'react-parallax-hover';
@@ -7,7 +7,6 @@ import image2 from 'app/assets/images/gallery/_gallery-2.jpg';
 import image3 from 'app/assets/images/gallery/_gallery-3.jpg';
 import image4 from 'app/assets/images/gallery/_gallery-4.jpg';
 import innerBg from 'app/assets/images/_inner-bg.jpg';
-import Carousel, { Modal, ModalGateway } from 'react-images';
 import FooterSection from '../HomePage/components/FooterSection';
 import AdvertisementSection from '../HomePage/components/AdvertisementSection';
 import ImageCard from './components/ImageCard';
