@@ -5,7 +5,8 @@ import { UserListActionTypes, GET_USER_DETAILS } from './types';
 import {} from 'app/api/api';
 import { DISPATCH_TOAST_SUCCESS } from 'app/common/constants';
 
-function* getOfferBuckets(action: UserListActionTypes) {
+//saga for get profile details
+function* getProfileDetails(action: UserListActionTypes) {
   try {
     const payload = {
       api: '',
@@ -28,5 +29,5 @@ function* getOfferBuckets(action: UserListActionTypes) {
 }
 
 export default function* watcherSaga() {
-  yield takeLatest(GET_USER_DETAILS, getOfferBuckets);
+  yield takeLatest(GET_USER_DETAILS, getProfileDetails);
 }
