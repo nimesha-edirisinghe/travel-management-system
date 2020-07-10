@@ -4,7 +4,8 @@ import { DISPATCH_TOAST_FAILURE } from '../toast/types';
 import { BlockListActionTypes, GET_BLOG_DETAILS } from './types';
 import {} from 'app/api/api';
 
-function* getOfferBuckets(action: BlockListActionTypes) {
+// get blog list saga function
+function* getBlogList(action: BlockListActionTypes) {
   try {
     const payload = {
       api: '',
@@ -19,5 +20,5 @@ function* getOfferBuckets(action: BlockListActionTypes) {
 }
 
 export default function* watcherSaga() {
-  yield takeLatest(GET_BLOG_DETAILS, getOfferBuckets);
+  yield takeLatest(GET_BLOG_DETAILS, getBlogList);
 }

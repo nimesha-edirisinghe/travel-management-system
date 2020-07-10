@@ -1,11 +1,11 @@
 import { put, select, take, takeLatest } from 'redux-saga/effects';
+import { DISPATCH_TOAST_SUCCESS } from 'app/common/constants';
 import { MAKE_API_REQUEST, SUCCESS } from '../request/types';
 import { DISPATCH_TOAST_FAILURE, DISPATCH_TOAST_SUCESS } from '../toast/types';
 import { UserListActionTypes, GET_USER_DETAILS } from './types';
 import {} from 'app/api/api';
-import { DISPATCH_TOAST_SUCCESS } from 'app/common/constants';
 
-//saga for get profile details
+// saga for get profile details
 function* getProfileDetails(action: UserListActionTypes) {
   try {
     const payload = {
