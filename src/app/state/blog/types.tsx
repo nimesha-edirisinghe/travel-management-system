@@ -1,6 +1,8 @@
+// blog types
 export const GET_BLOG_DETAILS = 'GET_BLOG_DETAILS';
 
 export type blogListState = {
+  loading: boolean;
   blogList: any[];
 };
 
