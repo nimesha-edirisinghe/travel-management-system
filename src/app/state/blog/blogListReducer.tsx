@@ -2,6 +2,7 @@ import { blogListState, GET_BLOG_DETAILS } from './types';
 import { SUCCESS } from '../request/types';
 
 const initialState: blogListState = {
+  loading: false,
   blogList: [],
 };
 
